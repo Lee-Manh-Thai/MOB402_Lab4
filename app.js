@@ -32,7 +32,7 @@ app
   })
 
 // _3
-app.use(express.static(__dirname +'/public/css'));
+app.use(express.static('public'));
 app
 .get('/exercise3',(req,res) => {
     res.render('poem');
